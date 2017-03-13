@@ -53,7 +53,10 @@ action code
 
 
 /*------------ 2da Parte: Declaraciones --------------*/
-terminal mas;
+terminal Dolar,Igual,CorAbre,CorCierra,LlaveAbre,LlaveCierra,Comillas,Comilla,Coma,Porcentaje,SignoMas, SignoMenos,SignoPor,SignoDiv,Mod,Raiz,Potencia,AdmiDoble,OR,AND,MenorQue;
+terminal MayorQue,MenorIgual,MayorIgual,IgualDoble,Diferente,DosPuntos,PuntoYComa;
+terminal let,calcular,succ,decc,min,max,sum,product,length,revers,impr,par,asc,desc,Sent_If,then,Sent_Else,end,Sent_Case;
+terminal num,decimal,Caracter,ID;
 non terminal String INICIO;
 
 
@@ -64,4 +67,4 @@ start with INICIO;
 
 /*------------ 3era Parte: Reglas Semanticas --------------*/
 
-INICIO ::= mas {: System.out.println("entrada correcta"); :};
+INICIO ::= SignoMas {: System.out.println("entrada correcta"); :};

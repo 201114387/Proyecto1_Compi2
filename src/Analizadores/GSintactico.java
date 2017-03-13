@@ -40,8 +40,8 @@ public class GSintactico extends java_cup.runtime.lr_parser {
   /** Parse-action table. */
   protected static final short[][] _action_table = 
     unpackFromStrings(new String[] {
-    "\000\004\000\004\004\004\001\002\000\004\002\000\001" +
-    "\002\000\004\002\006\001\002\000\004\002\001\001\002" +
+    "\000\004\000\004\016\005\001\002\000\004\002\006\001" +
+    "\002\000\004\002\000\001\002\000\004\002\001\001\002" +
     "" });
 
   /** Access to parse-action table. */
@@ -50,7 +50,7 @@ public class GSintactico extends java_cup.runtime.lr_parser {
   /** <code>reduce_goto</code> table. */
   protected static final short[][] _reduce_table = 
     unpackFromStrings(new String[] {
-    "\000\004\000\004\002\004\001\001\000\002\001\001\000" +
+    "\000\004\000\004\002\003\001\001\000\002\001\001\000" +
     "\002\001\001\000\002\001\001" });
 
   /** Access to <code>reduce_goto</code> table. */
@@ -170,7 +170,7 @@ class CUP$GSintactico$actions {
           return CUP$GSintactico$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 1: // INICIO ::= mas 
+          case 1: // INICIO ::= SignoMas 
             {
               String RESULT =null;
 		 System.out.println("entrada correcta"); 

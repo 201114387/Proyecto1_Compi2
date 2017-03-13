@@ -8,13 +8,113 @@ package Analizadores;
 /** CUP generated class containing symbol constants. */
 public class HSimbolos {
   /* terminals */
-  public static final int error = 1;
-  public static final int mas = 2;
+  public static final int SignoDiv = 15;
+  public static final int decc = 33;
+  public static final int Coma = 10;
+  public static final int Sent_Case = 48;
+  public static final int par = 41;
+  public static final int Diferente = 27;
+  public static final int Potencia = 18;
+  public static final int asc = 42;
+  public static final int AdmiDoble = 19;
+  public static final int calcular = 31;
+  public static final int AND = 21;
+  public static final int let = 30;
+  public static final int succ = 32;
+  public static final int LlaveCierra = 7;
+  public static final int PuntoYComa = 29;
+  public static final int CorAbre = 4;
+  public static final int end = 47;
+  public static final int sum = 36;
+  public static final int OR = 20;
+  public static final int length = 38;
+  public static final int CorCierra = 5;
+  public static final int LlaveAbre = 6;
+  public static final int ID = 52;
+  public static final int then = 45;
+  public static final int max = 35;
   public static final int EOF = 0;
+  public static final int IgualDoble = 26;
+  public static final int DosPuntos = 28;
+  public static final int revers = 39;
+  public static final int MayorQue = 23;
+  public static final int error = 1;
+  public static final int Dolar = 2;
+  public static final int SignoMas = 12;
+  public static final int Sent_Else = 46;
+  public static final int product = 37;
+  public static final int MenorIgual = 24;
+  public static final int SignoPor = 14;
+  public static final int impr = 40;
+  public static final int desc = 43;
+  public static final int SignoMenos = 13;
+  public static final int Mod = 16;
+  public static final int Caracter = 51;
+  public static final int MenorQue = 22;
+  public static final int Porcentaje = 11;
+  public static final int MayorIgual = 25;
+  public static final int Raiz = 17;
+  public static final int num = 49;
+  public static final int Sent_If = 44;
+  public static final int min = 34;
+  public static final int decimal = 50;
+  public static final int Igual = 3;
+  public static final int Comilla = 9;
+  public static final int Comillas = 8;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
-  "mas"
+  "Dolar",
+  "Igual",
+  "CorAbre",
+  "CorCierra",
+  "LlaveAbre",
+  "LlaveCierra",
+  "Comillas",
+  "Comilla",
+  "Coma",
+  "Porcentaje",
+  "SignoMas",
+  "SignoMenos",
+  "SignoPor",
+  "SignoDiv",
+  "Mod",
+  "Raiz",
+  "Potencia",
+  "AdmiDoble",
+  "OR",
+  "AND",
+  "MenorQue",
+  "MayorQue",
+  "MenorIgual",
+  "MayorIgual",
+  "IgualDoble",
+  "Diferente",
+  "DosPuntos",
+  "PuntoYComa",
+  "let",
+  "calcular",
+  "succ",
+  "decc",
+  "min",
+  "max",
+  "sum",
+  "product",
+  "length",
+  "revers",
+  "impr",
+  "par",
+  "asc",
+  "desc",
+  "Sent_If",
+  "then",
+  "Sent_Else",
+  "end",
+  "Sent_Case",
+  "num",
+  "decimal",
+  "Caracter",
+  "ID"
   };
 }
 
