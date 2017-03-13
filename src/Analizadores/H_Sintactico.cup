@@ -1,0 +1,67 @@
+/*------------ 1era Parte: Codigo de Usuario --------------*/
+//------- importaciones, paquetes
+
+package Analizadores;
+import java_cup.runtime.*;
+import java.util.LinkedList;
+
+//---------------- Codigo para el parser,variables, metodos
+parser code
+{:
+	public String resultado = "";   //declaracion de variable que nos servira para imprimir el resultado
+	public static LinkedList<THError> TablaES = new LinkedList<THError>();
+	
+	//Metodo al que se llama automaticamente ante algun error sintactico
+	public void syntax_error(Symbol s)
+	{
+		String lexema = s.value.toString();
+		int fila = s.right;
+		int columna = s.left;
+		
+		System.out.println("!!!! Error Sintactico Recuperado");
+		System.out.println("\t\tLexema: " + lexema);
+		System.out.println("\t\tFila: " + fila);
+		System.out.println("\t\tColumna: " + columna);
+		
+		THError datos = new THError(lexema, fila, columna, "Error sintactico", "El caracter no viene en lo esperado");
+		TablaES.add(datos);
+	}
+	
+	//metodo que se llama cuando ya no es posible recuperarse del error
+	public void unrecovered_syntax_error(Symbol s) throws java.lang.Exception
+	{
+		String lexema = s.value.toString();
+		int fila = s.right;
+		int columna = s.left;
+		
+		System.out.println("!!!! Error Sintactico, modo panico");
+		System.out.println("\t\tLexema: " + lexema);
+		System.out.println("\t\tFila: " + fila);
+		System.out.println("\t\tColumna: " + columna);
+		
+		THError datos = new THError(lexema, fila, columna, "Error sintactico", "El caracter no viene en lo esperado");
+		TablaES.add(datos);
+		
+	}
+:}
+
+//----------- codigo para las acciones gramaticales 
+action code
+{:
+
+:}
+
+
+/*------------ 2da Parte: Declaraciones --------------*/
+terminal mas;
+non terminal String INICIO;
+
+
+//inicio de donde inicia a recorrer
+
+start with INICIO;
+
+
+/*------------ 3era Parte: Reglas Semanticas --------------*/
+
+INICIO ::= mas {: System.out.println("entrada correcta"); :};
